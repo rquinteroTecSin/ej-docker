@@ -1,8 +1,8 @@
-#Create MySQL Image for JSP Tutorial Application
+#Create MySQL Image for pos Application
 FROM mysql
-MAINTAINER csgeek@mail.com
+MAINTAINER iscrquinter@mail.com
 
-ENV MYSQL_ROOT_PASSWORD jsppassword
-ADD jsp_backup.sql /docker-entrypoint-initdb.d
+ENV MYSQL_ROOT_PASSWORD pospassword
+ADD pos.sql /docker-entrypoint-initdb.d
 
 EXPOSE 3306
